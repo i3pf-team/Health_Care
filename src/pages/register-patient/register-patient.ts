@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import {  NavController, NavParams } from 'ionic-angular';
+import { ToastController } from 'ionic-angular';
+import { SelectCategoryPage} from '../select-category/select-category';
 
 /**
  * Generated class for the RegisterPatientPage page.
@@ -15,7 +17,20 @@ import {  NavController, NavParams } from 'ionic-angular';
 })
 export class RegisterPatientPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public toastController: ToastController, public navCtrl: NavController, public navParams: NavParams) {
+  }
+  Login(){
+
+    this.navCtrl.push(SelectCategoryPage);
+  }
+  presentToastWithOptions() {
+    const toast =  this.toastController.create({
+      message: 'User Registered!',
+      showCloseButton: true,
+      position: 'bottom',
+      closeButtonText: 'Done'
+    });
+    toast.present();
   }
 
   ionViewDidLoad() {
