@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { ToastController } from 'ionic-angular';
-import { SelectCategoryPage } from '../select-category/select-category';
 
 /**
  * Generated class for the RegisterDoctorPage page.
@@ -32,7 +31,13 @@ export class RegisterDoctorPage {
 
   Login(){
 
-    this.navCtrl.push(SelectCategoryPage);
+    const toast =  this.toastController.create({
+      message: 'Goto Login Page',
+      showCloseButton: true,
+      position: 'bottom',
+      closeButtonText: 'Done'
+    });
+    toast.present();
   }
 
 
