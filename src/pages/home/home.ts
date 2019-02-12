@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { RegisterDoctorPage } from '../register-doctor/register-doctor';
-import { SelectCategoryPage } from '../select-category/select-category';
+import { RegisterPatientPage } from '../register-patient/register-patient';
 
 @Component({
   selector: 'page-home',
