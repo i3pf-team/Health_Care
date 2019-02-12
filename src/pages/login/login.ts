@@ -1,5 +1,7 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
+import { SelectCategoryPage } from '../select-category/select-category';
 
 /**
  * Generated class for the LoginPage page.
@@ -17,6 +19,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class LoginPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  signIn(){
+
+    this.navCtrl.push(HomePage);
+  }
+  Register(){
+
+    this.navCtrl.push(SelectCategoryPage);
+
   }
 
   ionViewDidLoad() {
