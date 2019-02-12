@@ -28,6 +28,7 @@ export class SelectCategoryPage {
     this.navCtrl.push(RegisterDoctorPage);
   }
   goToPatientRegistration(){
+
     this.navCtrl.push(RegisterPatientPage);
   }
 
