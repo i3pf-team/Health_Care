@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {  NavController, NavParams } from 'ionic-angular';
 import { ToastController } from 'ionic-angular';
 import { SelectCategoryPage} from '../select-category/select-category';
+import { LoginPage } from '../login/login';
 
 /**
  * Generated class for the RegisterPatientPage page.
@@ -21,11 +22,8 @@ export class RegisterPatientPage {
   }
   Login(){
 
-    const toast =  this.toastController.create({
-      message: 'Goto Login Page',
-      duration: 2000
-    });
-    toast.present();
+    this.navCtrl.push(LoginPage);
+    
   }
   presentToastWithOptions() {
     const toast =  this.toastController.create({
