@@ -10,6 +10,8 @@ import { SelectCategoryPage } from '../pages/select-category/select-category';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { RegisterDoctorPage } from '../pages/register-doctor/register-doctor';
+import { RegisterPatientPage } from '../pages/register-patient/register-patient';
+
 
 @NgModule({
   declarations: [
