@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { ToastController } from 'ionic-angular';
+import { LoginPage } from '../login/login';
 
 /**
  * Generated class for the RegisterDoctorPage page.
@@ -19,21 +20,19 @@ export class RegisterDoctorPage {
   }
 
 
-   presentToastWithOptions() {
+  Register() {
+    
     const toast =  this.toastController.create({
-      message: 'Registered Successfully.',
+      message: 'Patient Registered.',
       duration: 2000
     });
     toast.present();
+   
   }
 
   Login(){
 
-    const toast = this.toastController.create({
-      message: 'Goto Login Page.',
-      duration: 2000
-    });
-    toast.present();
+    this.navCtrl.push(LoginPage);
   }
 
 
