@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {  NavController, NavParams } from 'ionic-angular';
 
 import { RegisterDoctorPage } from '../register-doctor/register-doctor';
+import { RegisterPatientPage } from '../register-patient/register-patient';
 
 
 /**
@@ -27,7 +28,7 @@ export class SelectCategoryPage {
     this.navCtrl.push(RegisterDoctorPage);
   }
   goToPatientRegistration(){
-
+    this.navCtrl.push(RegisterPatientPage);
   }
 
 }
