@@ -1,0 +1,32 @@
+page-login {
+    img{
+        width: 100%;
+    }
+   
+    ion-input{
+    
+        text-align: center;   
+    }
+    ion-row {
+        width: 100%;
+    }
+    .button_signIn{
+        
+        padding: 20px;
+        align-content: center;
+    }
+    .button_register{
+        
+        margin-top: 8px;
+        padding: 20px;
+        align-content: center;
+    }
+    .forgetPassword{
+        margin-left: 20px;
+        text-decoration: underline;
+        font-weight: bold;
+        color: rgb(6, 107, 240);
+
+    }
+
+}
