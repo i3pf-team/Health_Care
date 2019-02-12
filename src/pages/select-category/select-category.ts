@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {  NavController, NavParams } from 'ionic-angular';
 
-import { RegisterDoctorPage } from '../../pages/register-doctor/register-doctor';
+import { RegisterDoctorPage } from '../register-doctor/register-doctor';
 
 
 /**
