@@ -16,12 +16,13 @@ import { RegisterDoctorPage } from '../pages/register-doctor/register-doctor';
     MyApp,
     HomePage,
     RegisterDoctorPage,
+    RegisterPatientPage,
     ListPage,
     SelectCategoryPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -29,6 +30,7 @@ import { RegisterDoctorPage } from '../pages/register-doctor/register-doctor';
     HomePage,
     ListPage,
     RegisterDoctorPage,
+    RegisterPatientPage,
     SelectCategoryPage
   ],
   providers: [
