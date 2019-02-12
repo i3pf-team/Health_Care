@@ -21,14 +21,16 @@ export class RegisterPatientPage {
   }
   Login(){
 
-    this.navCtrl.push(SelectCategoryPage);
+    const toast =  this.toastController.create({
+      message: 'Goto Login Page',
+      duration: 2000
+    });
+    toast.present();
   }
   presentToastWithOptions() {
     const toast =  this.toastController.create({
-      message: 'User Registered!',
-      showCloseButton: true,
-      position: 'bottom',
-      closeButtonText: 'Done'
+      message: 'Patient Registered.',
+      duration: 2000
     });
     toast.present();
   }
