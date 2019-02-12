@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import {  NavController, NavParams } from 'ionic-angular';
 
+import { RegisterDoctorPage } from '../../pages/register-doctor/register-doctor';
+
+
 /**
  * Generated class for the SelectCategoryPage page.
  *
@@ -21,7 +24,7 @@ export class SelectCategoryPage {
     console.log('ionViewDidLoad SelectCategoryPage');
   }
   goToDoctorRegistration(){
-
+    this.navCtrl.push(RegisterDoctorPage);
   }
   goToPatientRegistration(){
 
