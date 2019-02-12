@@ -21,21 +21,17 @@ export class RegisterDoctorPage {
 
    presentToastWithOptions() {
     const toast =  this.toastController.create({
-      message: 'User Registered!',
-      showCloseButton: true,
-      position: 'bottom',
-      closeButtonText: 'Done'
+      message: 'Registered Successfully.',
+      duration: 2000
     });
     toast.present();
   }
 
   Login(){
 
-    const toast =  this.toastController.create({
-      message: 'Goto Login Page',
-      showCloseButton: true,
-      position: 'bottom',
-      closeButtonText: 'Done'
+    const toast = this.toastController.create({
+      message: 'Goto Login Page.',
+      duration: 2000
     });
     toast.present();
   }
