@@ -25,6 +25,7 @@ export class SelectCategoryPage {
     console.log('ionViewDidLoad SelectCategoryPage');
   }
   goToDoctorRegistration(){
+    
     this.navCtrl.push(RegisterDoctorPage);
   }
   goToPatientRegistration(){
