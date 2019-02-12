@@ -9,11 +9,13 @@ import { SelectCategoryPage } from '../pages/select-category/select-category';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { RegisterDoctorPage } from '../pages/register-doctor/register-doctor';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
+    RegisterDoctorPage,
     ListPage,
     SelectCategoryPage
   ],
@@ -26,6 +28,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     ListPage,
+    RegisterDoctorPage,
     SelectCategoryPage
   ],
   providers: [
