@@ -1,0 +1,69 @@
+<!--
+  Generated template for the RegisterDoctorPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>RegisterDoctor</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+
+      <ion-item>
+
+      <ion-input type="email" placeholder="Email" required="true" name="email" ></ion-input>
+
+    </ion-item>
+
+    <ion-item>
+
+      <ion-input type="password" placeholder="Password" required="true" name="password" ></ion-input>
+
+    </ion-item>
+
+      <ion-item>
+
+      <ion-input type="number" placeholder="Mobile Number" required="true" name="mobile" ></ion-input>
+
+    </ion-item>
+
+    <ion-item>
+
+      <ion-input type="text" placeholder="Address" required="true" name="address" ></ion-input>
+
+    </ion-item>
+
+    
+    <ion-item>
+
+      <ion-input type="number" placeholder="CNIC" required="true" name="cnic" ></ion-input>
+
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Speciality</ion-label>
+      <ion-select  okText="Okay" cancelText="Dismiss">
+        <ion-option >OPD</ion-option>
+        <ion-option >CARDIOLOGIST</ion-option>
+        <ion-option >ORTHOPEDIC</ion-option>
+        <ion-option >ENT</ion-option>
+        <ion-option >DENTIST</ion-option>
+        <ion-option >GYNECOLOGIST</ion-option>
+      </ion-select>
+    </ion-item> 
+
+  </ion-list>
+
+  <div padding>
+
+  <button ion-button  round outline block (click)="presentToastWithOptions()">Register</button>
+
+  </div>
+
+  <ion-label (click)="Login()">Already a Member?Login</ion-label>
+
+</ion-content>

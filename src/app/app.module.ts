@@ -5,28 +5,39 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { SelectCategoryPage } from '../pages/select-category/select-category';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/login/login';
+import { RegisterDoctorPage } from '../pages/register-doctor/register-doctor';
+import { RegisterPatientPage } from '../pages/register-patient/register-patient';
+
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     LoginPage,
-    ListPage
+    ListPage,
+    RegisterDoctorPage,
+    RegisterPatientPage,
+    ListPage,
+    SelectCategoryPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
     LoginPage,
-    ListPage
+    ListPage,
+    RegisterDoctorPage,
+    RegisterPatientPage,
+    SelectCategoryPage
   ],
   providers: [
     StatusBar,
