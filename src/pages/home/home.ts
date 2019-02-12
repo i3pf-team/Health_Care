@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { RegisterDoctorPage } from '../register-doctor/register-doctor';
+import { SelectCategoryPage } from '../select-category/select-category';
 
 @Component({
   selector: 'page-home',
@@ -14,6 +15,10 @@ export class HomePage {
   registerDoctor(){
 
     this.navCtrl.push(RegisterDoctorPage);
+  }
+  registerPatient(){
+
+    this.navCtrl.push(RegisterPatientPage);
   }
 
 }
