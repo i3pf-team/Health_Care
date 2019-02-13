@@ -1,38 +1,36 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { SelectCategoryPage } from '../select-category/select-category';
 
-/**
- * Generated class for the LoginPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
- 
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html',
-  
+
 })
 export class LoginPage {
+  public radiobtn_value = "patient";
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public toastController: ToastController, public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  signIn(){
-
-    this.navCtrl.push(HomePage);
+  signIn() {
+    this.navCtrl.push(HomePage, {
+      data: this.radiobtn_value
+    });
   }
-  Register(){
 
+  Register() {
     this.navCtrl.push(SelectCategoryPage);
-
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
+  }
+
+  radiobtn_Selected_Value(radiobtn_value) {
+    this.radiobtn_value = radiobtn_value;
+    
   }
 
 }
