@@ -1,19 +1,31 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import { SelectCategoryPage } from '../select-category/select-category';
+import { NavController, NavParams, MenuController } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
+  public viewedMenu;
 
-  constructor(public navCtrl: NavController) {
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public menu: MenuController) {
+      this.viewedMenu=navParams.get('data')
 
+    //menu.enable(true);
   }
-  Register(){
 
-    this.navCtrl.push(SelectCategoryPage);
+  openMenu(evt) {
+    if (evt === "patient") {
+      this.menu.enable(true, 'menu1');
+      this.menu.enable(false, 'menu2');
+    } else if (evt === "doctor") {
+      this.menu.enable(true, 'menu2');
+      this.menu.enable(false, 'menu1');
+    }
+    this.menu.toggle();
   }
 
 }
