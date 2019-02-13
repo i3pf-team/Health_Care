@@ -1,37 +1,32 @@
-
 <ion-content>
- <img src="assets/imgs/login_bg.png" alt="login-cover">
+  <img src="assets/imgs/login_bg.png" alt="login-cover">
 
- <ion-item  >
-  <ion-input  round type="email" placeholder="Email" name="email" #username></ion-input>
-</ion-item>
+  <ion-item>
+    <ion-input round type="email" placeholder="Email" name="email" #username></ion-input>
+  </ion-item>
 
-<ion-item>
-  <ion-input type="password" placeholder="Password" name="password" #password></ion-input>
-</ion-item>
+  <ion-item>
+    <ion-input type="password" placeholder="Password" name="password" #password></ion-input>
+  </ion-item>
 
-
-<ion-row radio-group >
-
+  <ion-row radio-group>
     <ion-col>
       <ion-item>
         <ion-label>Patient</ion-label>
-        <ion-radio value="patient"></ion-radio>
+        <ion-radio checked="true" value="patient" (ionSelect)="radiobtn_Selected_Value('patient')"></ion-radio>
       </ion-item>
     </ion-col>
     <ion-col>
       <ion-item>
-       <ion-label>Doctor</ion-label>
-        <ion-radio value="doctor"></ion-radio>
+        <ion-label>Doctor</ion-label>
+        <ion-radio value="doctor" (ionSelect)="radiobtn_Selected_Value('doctor')"></ion-radio>
       </ion-item>
     </ion-col>
+
   </ion-row>
-  
-      <ion-label class="forgetPassword">Forget Password</ion-label>
-    
 
-<button class="button_signIn" ion-button round block (click)="signIn()">Sign In</button>
+  <ion-label class="forgetPassword">Forget Password</ion-label>
 
-<button class="button_register" ion-button round outline block (click)="Register()">Register</button>
-
+  <button class="button_signIn" ion-button round block (click)="signIn()">Sign In</button>
+  <button class="button_register" ion-button round outline block (click)="Register()">Register</button>
 </ion-content>
