@@ -1,6 +1,7 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { HomePage } from '../home/home';
+import { DoctorHomePage } from '../doctor-home/doctor-home';
 import { SelectCategoryPage } from '../select-category/select-category';
 
 @Component({
