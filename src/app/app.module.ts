@@ -12,6 +12,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/login/login';
 import { RegisterDoctorPage } from '../pages/register-doctor/register-doctor';
 import { RegisterPatientPage } from '../pages/register-patient/register-patient';
+import { DoctorHomePage } from '../pages/doctor-home/doctor-home';
+
 
 
 @NgModule({
@@ -23,7 +25,8 @@ import { RegisterPatientPage } from '../pages/register-patient/register-patient'
     RegisterDoctorPage,
     RegisterPatientPage,
     ListPage,
-    SelectCategoryPage
+    SelectCategoryPage,
+    DoctorHomePage
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,8 @@ import { RegisterPatientPage } from '../pages/register-patient/register-patient'
     ListPage,
     RegisterDoctorPage,
     RegisterPatientPage,
-    SelectCategoryPage
+    SelectCategoryPage,
+    DoctorHomePage
   ],
   providers: [
     StatusBar,
