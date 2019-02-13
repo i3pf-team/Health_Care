@@ -23,7 +23,7 @@ export class RegisterDoctorPage {
   Register() {
     
     const toast =  this.toastController.create({
-      message: 'Patient Registered.',
+      message: 'Doctor Registered.',
       duration: 2000
     });
     toast.present();
