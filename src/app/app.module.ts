@@ -13,7 +13,7 @@ import { LoginPage } from '../pages/login/login';
 import { RegisterDoctorPage } from '../pages/register-doctor/register-doctor';
 import { RegisterPatientPage } from '../pages/register-patient/register-patient';
 import { DoctorHomePage } from '../pages/doctor-home/doctor-home';
-
+import { SplashPage } from '../pages/splash/splash';
 
 
 @NgModule({
@@ -26,7 +26,8 @@ import { DoctorHomePage } from '../pages/doctor-home/doctor-home';
     RegisterPatientPage,
     ListPage,
     SelectCategoryPage,
-    DoctorHomePage
+    DoctorHomePage,
+    SplashPage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +42,8 @@ import { DoctorHomePage } from '../pages/doctor-home/doctor-home';
     RegisterDoctorPage,
     RegisterPatientPage,
     SelectCategoryPage,
-    DoctorHomePage
+    DoctorHomePage,
+    SplashPage
   ],
   providers: [
     StatusBar,
