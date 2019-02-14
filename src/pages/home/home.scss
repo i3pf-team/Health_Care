@@ -15,12 +15,19 @@ page-home {
         margin-right: auto;
         width: 70%;
         height: 70px;
+        
 
     }
     .mainContent{
 
         background-image: url("../assets/imgs/background.jpg");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;         
+        
+        
     }
+    
     ion-label{
 
         
