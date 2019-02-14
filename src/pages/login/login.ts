@@ -1,5 +1,5 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import {  NavController, NavParams, ToastController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { DoctorHomePage } from '../doctor-home/doctor-home';
 import { SelectCategoryPage } from '../select-category/select-category';
@@ -16,18 +16,16 @@ export class LoginPage {
   }
 
   signIn() {
-    if(this.radiobtn_value==="patient")
-    {
-    this.navCtrl.push(HomePage, {
-      data: this.radiobtn_value
-    });
-  }
-  else if(this.radiobtn_value==="doctor")
-  {
-    this.navCtrl.push(DoctorHomePage, {
-      data: this.radiobtn_value
-    });
-  }
+    if (this.radiobtn_value === "patient") {
+      this.navCtrl.push(HomePage, {
+        data: this.radiobtn_value
+      });
+    }
+    else if (this.radiobtn_value === "doctor") {
+      this.navCtrl.push(DoctorHomePage, {
+        data: this.radiobtn_value
+      });
+    }
   }
 
   Register() {
@@ -40,7 +38,7 @@ export class LoginPage {
 
   radiobtn_Selected_Value(radiobtn_value) {
     this.radiobtn_value = radiobtn_value;
-    
+
   }
 
 }
