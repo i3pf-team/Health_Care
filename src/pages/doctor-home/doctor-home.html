@@ -6,10 +6,17 @@
 -->
 <ion-header>
   <ion-toolbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
+    <ion-buttons left *ngIf="viewedMenu==='patient'">
+      <button ion-button icon-only (click)="openMenu('patient')">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title>Home</ion-title>
+    <ion-buttons left *ngIf="viewedMenu=='doctor'">
+      <button ion-button icon-only (click)="openMenu('doctor')">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
