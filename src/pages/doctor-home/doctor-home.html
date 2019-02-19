@@ -32,7 +32,7 @@
       
   <div>
         <ion-grid >
-      <ion-row>
+      <!-- <ion-row>
         <ion-col class="mainContainer">
             <div >
                 <img src="assets/imgs/consultation.png" alt="1">
@@ -68,7 +68,16 @@
                   </div>
           </ion-col>
         </ion-row>
-        
+         -->
+         
+         <ion-grid>
+          <ion-row *ngFor="let row of grid">
+            <ion-col width-50 *ngFor="let file_uri of row">
+              <img [src]="file_uri">
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      
       </ion-grid>
     </div>
 </ion-content>
