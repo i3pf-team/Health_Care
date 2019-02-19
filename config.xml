@@ -29,10 +29,7 @@
         <icon density="xhdpi" src="resources/android/icon/drawable-xhdpi-icon.png" />
         <icon density="xxhdpi" src="resources/android/icon/drawable-xxhdpi-icon.png" />
         <icon density="xxxhdpi" src="resources/android/icon/drawable-xxxhdpi-icon.png" />
-<<<<<<< HEAD
-=======
         <splash density="land-xhdpi" src="resources/android/splash/splash.gif" />
->>>>>>> ddc55542d830176c163a4dbb40ffcb20cb41f1af
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
@@ -56,11 +53,7 @@
         <icon height="58" src="resources/ios/icon/icon-small@2x.png" width="58" />
         <icon height="87" src="resources/ios/icon/icon-small@3x.png" width="87" />
         <icon height="1024" src="resources/ios/icon/icon-1024.png" width="1024" />
-<<<<<<< HEAD
-        <splash height="2732" src="resources/ios/splash/splash.gif" width="2732" />
-=======
         <splash height="2048" src="resources/ios/splash/splash.gif" width="2732" />
->>>>>>> ddc55542d830176c163a4dbb40ffcb20cb41f1af
     </platform>
     <plugin name="cordova-plugin-whitelist" spec="1.3.3" />
     <plugin name="cordova-plugin-statusbar" spec="2.4.2" />
