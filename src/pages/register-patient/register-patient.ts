@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import {  NavController, NavParams } from 'ionic-angular';
 import { ToastController } from 'ionic-angular';
-import { SelectCategoryPage} from '../select-category/select-category';
 import { LoginPage } from '../login/login';
 
 /**
