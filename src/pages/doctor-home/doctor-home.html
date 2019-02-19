@@ -21,17 +21,15 @@
 </ion-header>
 
 <ion-content padding class="mainContent">
-    <ion-list>
-      <ion-item>
-
+    
      
-            <ion-label>Online</ion-label>
-            <ion-toggle color="primary"></ion-toggle>
-          </ion-item>
-        </ion-list> 
-      
-  <div>
-        <ion-grid >
+<ion-grid>
+  <ion-row *ngFor="let row of grid">
+    <ion-col width-50 *ngFor="let file_uri of row">
+      <img [src]="file_uri">
+    </ion-col>
+  </ion-row>
+</ion-grid>
       <!-- <ion-row>
         <ion-col class="mainContainer">
             <div >
@@ -70,14 +68,5 @@
         </ion-row>
          -->
          
-         <ion-grid>
-          <ion-row *ngFor="let row of grid">
-            <ion-col width-50 *ngFor="let file_uri of row">
-              <img [src]="file_uri">
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-      
-      </ion-grid>
-    </div>
+        
 </ion-content>
