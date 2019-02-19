@@ -23,12 +23,20 @@ export class DoctorHomePage {
   constructor(public toastController: ToastController,public navCtrl: NavController, public navParams: NavParams, public menu: MenuController) {
     this.viewedMenu=navParams.get('data');
  
-    this.images = ['https://www.w3schools.com/images/w3schools_green.jpg','https://www.w3schools.com/images/w3schools_green.jpg','https://www.w3schools.com/images/w3schools_green.jpg'];
+    this.images = ['assets/imgs/consultation.png','assets/imgs/consultation.png','assets/imgs/consultation.png','assets/imgs/consultation.png', 'assets/imgs/consultation.png', 'assets/imgs/consultation.png'];
     this.grid = Array(Math.ceil(this.images.length/2));
     
-  }
 
-  ionViewLoaded() {
+    this.ionv();
+    
+  }
+  public ionv() {
+
+    const toast =  this.toastController.create({
+      message: 'Doctor Registered.',
+      duration: 2000
+    });
+    toast.present();
 
     let rowNum = 0; //counter to iterate over the rows in the grid
   
